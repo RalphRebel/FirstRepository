@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: none;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: none;
+            background-color:transparent;
+            text-decoration: none;
+        }
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        *{
+            box-sizing:border-box;
+        }
+
+    </style>
+    <!--3rd party JS codes are usually in the head section-->
+    <title>
+        First Website
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<body>
+    <header>My First Website</header>
+    <hr>
+    <!--Tool tip will be of great use for many terms-->
+    <h1 title='Im a tooltip'>Choices and features</h1>
+    <!--Think about putting this list on a sidebar, class="toggle" & "fa fa-bars"-->
+    <!--Should I try using a wrapper?-->
+        <ul style="list-style-type: none">
+            <li><a href="Biology.html">Biology</a></li>
+            <li><a href="Chemistry.html">Chemistry</a></li>
+            <li><a href="Physics.html">Physics</a></li>
+            <li><a href="English.html">English</a></li>
+            <li><a href="Japanese.html" target="_self">Japanese</a></li> 
+            <li><a href="Filipino.html" target="_self">Filipino</a></li>    
+            <li><a href="Math.html">Math</a></li>
+            <li><a href="CodingLanguages.html">Coding Languages</a></li>
+        </ul>    
+    <script src="firstJscript.js"></script>
+    <!--Put script on the bottom because the code is read from top to bottom.
+    This will make things easier to encrypt the codes-->
+    
+    <hr>
+    <div class="footer">
+        <p>select languages</p>
+        <a href="">careers</a><br>
+        <a href="">other websites</a> 
+    </div>
+    <p>Terms of use</p>
+    <p>Privacy</p>
+    <p>copyrights</p>
+</body>
+
+</html>
