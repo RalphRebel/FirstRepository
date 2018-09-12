@@ -1,0 +1,41 @@
+header {
+    background-color: skyblue;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    color:black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color:black;
+    padding: 8px 16px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 1px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: none;
+    color: none;
+}
+
+.footer {
+    position: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color:rgb(31, 31, 150);
+    text-align: center;
+
+}
