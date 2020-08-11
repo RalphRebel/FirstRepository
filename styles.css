@@ -1,0 +1,401 @@
+/* 
+   Final Project CSS Page
+   Filename: styles.css
+
+   Author:   Ralph Langit
+   Date:     2020 August 09
+   HTML5 and CSS3 Illustrated: Final Project
+*/
+/* reset styles */
+
+html {
+	font-size: 18px;
+}
+
+a,
+article,
+body,
+div,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+header,
+h1,
+h2,
+h3,
+img,
+input,
+li,
+label,
+legend,
+nav,
+p,
+section,
+textarea,
+ol,
+ul,
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 105%;
+	height: auto;
+	width: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* global styles */
+
+p {
+	margin: 0.4em 0;
+	font-size: 1.1em;
+}
+
+
+/* body and page container */
+
+body {
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	background: lightslategrey;
+	background-image: url("images/airplanes.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	max-width: 864px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/* skip navigation link */
+
+p.skipnavigation {
+	margin: 0;
+}
+
+p.skipnavigation a {
+	position: absolute;
+	left: -10000px;
+}
+
+p.skipnavigation a:focus {
+	color: black;
+	background-color: snow;
+	top: 2%;
+	left: auto;
+	right: 2%;
+	z-index: 2;
+}
+
+
+/* header section */
+
+header {
+	background-color: lightblue;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: 700;
+	border: 2px ridge black;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+/* site navigation */
+
+nav.sitenavigation {
+	padding-left: 18%;
+	background-color: rgb(241, 90, 36);
+	margin-top: -1.3em;
+}
+
+nav.sitenavigation li {
+	display: inline-block;
+	margin: 0.4em 0.6em;
+	font-size: 1.1em;
+}
+
+nav.sitenavigation a:link {
+	color: yellow;
+	text-decoration: none;
+}
+
+nav.sitenavigation a:visited {
+	color: #ffffff;
+}
+
+nav.sitenavigation a:hover,
+nav.sitenavigation a:focus {
+	color: yellow;
+	text-shadow: 1px -1px 0 #000000;
+}
+
+
+/* sidebar */
+
+aside {
+	position: relative;
+	padding: 2%;
+	float: right;
+	background-color: white;
+}
+
+aside h2 {
+	padding: 0.4em;
+	font-size: 1.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+}
+
+aside p {
+	padding-left: 1.4em;
+}
+
+
+/* main content table */
+
+table {
+	width: 40%;
+	margin: 1em auto;
+	text-align: center;
+}
+
+th,
+td {
+	width: 20%;
+	border: 1px solid black;
+	padding: 0.3em 1em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: white;
+}
+
+th {
+	background-color: rgb(241, 90, 36);
+}
+
+.specific-headers th {
+	background-color: lightblue;
+}
+
+
+/* main content */
+
+article {
+	text-align: left;
+	background-color: rgb(255, 255, 255);
+	overflow: auto;
+	margin-top: -1.0em;
+}
+
+aside {
+	width: 20%;
+	float: right;
+	margin-top: -1.0em;
+}
+
+#schedule {
+	width: 76%;
+	float: left;
+	font-size: 16px;
+	margin-top: -1.1em;
+	overflow: auto;
+	padding-bottom: 6.4em;
+}
+
+ol {
+	font-size: 16px;
+	border: 2px solid black;
+}
+
+h1 {
+	margin: 0 2% 0.4em;
+	font-size: 1.8em;
+	font-weight: 700;
+	text-align: center;
+}
+
+h2 {
+	margin: 0 2% 0.4em;
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+h3 {
+	margin: 1em 0 0.5em 2%;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: lightcoral;
+}
+
+article p {
+	margin: 0 2% 0.4em;
+}
+
+figure {
+	width: 40%;
+	float: right;
+	text-align: center;
+}
+
+.bmash {
+	float: right;
+	width: 40%;
+}
+
+#contentstart {
+	padding-top: 1em;
+}
+
+.imagemap {
+	text-align: center;
+}
+
+.pullquote {
+	text-align: justify;
+	margin-top: 2%;
+}
+
+.slogan {
+	text-align: center;
+}
+
+
+/* form styles */
+
+form {
+	margin: 2%;
+	padding: 2%;
+	border: 2px solid black;
+	background-color: lightblue;
+}
+
+
+/* fieldset styles */
+
+fieldset {
+	margin: 0 0 1em 1em;
+}
+
+legend {
+	margin: 0 0 0.4em -1em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.submitbutton {
+	margin-bottom: auto;
+}
+
+
+/* field styles */
+
+input {
+	border: 1px solid #777;
+	padding: 0.2em;
+	font-size: 1em;
+}
+
+.contactinfo input {
+	position: absolute;
+	left: 8em;
+}
+
+#nameinput,
+#emailinput,
+#addressinput {
+	width: 30em;
+}
+
+#zipinput,
+#phoneinput {
+	width: 12em;
+}
+
+.locationinfo label {
+	margin: 0.5em;
+}
+
+.bitetype label {
+	display: block;
+	margin-bottom: 0.2em;
+}
+
+
+/* footer section */
+
+footer {
+	padding: 1% 1% 1% 5%;
+	background-color: lightblue;
+	clear: both;
+	text-align: center;
+}
+
+#notes {
+	display: block;
+}
+
+
+/* label styles */
+
+label {
+	font-size: 1em;
+}
+
+.contactinfo label {
+	margin: 0.7em 0;
+	display: block;
+	position: relative;
+}
+
+
+/* print styles */
+
+@media print {
+	article,
+	article h2,
+	aside,
+	body,
+	.container,
+	footer,
+	header,
+	header h1,
+	header p {
+		color: rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+	}
+	article {
+		border-right: 4px solid black;
+		width: 60.5%
+	}
+	body {
+		max-width: 100%;
+	}
+	footer {
+		border-top: 4px solid black;
+	}
+	header {
+		border-bottom: 4px solid black;
+	}
+	nav {
+		display: none;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+

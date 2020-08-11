@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flights &#38; Bites - Sign Up</title>
+    <!--
+        Final Project Quote Page
+        Filename: quote.html
+      
+        Author:   FirstName LastName
+        Date:     2020 August 09
+        HTML5 and CSS3 Illustrated: Final Project
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="modernizr.custom.40753.js"></script>
+    <script src="respond.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+        <header>
+            <h1>Flights &#38; Bites</h1> 
+         </header>
+        <nav class="sitenavigation">
+            <ul>
+                <li><a href="index.html">Home Page</a></li> 
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="uk.html">UK Map</a></li>
+                <li>Sign Up</li>
+           </ul>
+        </nav>
+        <article id="contentstart">
+            <h2>Choose your flight and your bite</h2>
+            <p class="bmash">
+                <img src="images/bmash.jpg" width="345" height="450" alt="map of the UK">
+            </p>
+            <p>Hey you, want to go on an adventure? Reimagine the whole world once again? Why not try a bite of the UK? Come on you wanker, start today!</p>
+            <p>Book a four night stay today, and receive 4 free bites (limited to 1 bite per day). You can choose up to 4 bites, but 1 per day.</p>
+            <p>Take advantage of our experience</p>
+            <p>To get started, please provide the following information:</p>
+            <form action="results.html">
+            <fieldset class="contactinfo">
+                <legend>Contact Info</legend>
+                <label for="nameinput">
+                    Name
+                    <input type="text" name="name" id="nameinput" placeholder="First and Last name">
+                </label>
+                <label for="addressinput">
+                    Street Address
+                    <input type="search" name="address" id="addressinput">
+                </label>
+                <label for="zipinput">
+                    Zip Code
+                    <input type="text" name="zip" id="zipinput">
+                </label>
+                <label for="emailinput">
+                    Email
+                    <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+                </label>
+                <label for="phoneinput">
+                    Phone
+                    <input type="tel" name="phone" id="phoneinput">
+                </label>
+            </fieldset>
+            <fieldset class="options">
+                <legend>Schedule Options</legend>
+                <select name="options" id="checkin">
+                    <option value="01">August 1 - 4 (Weekends)</option>
+                    <option value="02">August 3 - 6 (Weekdays)</option>
+                    <option value="03">August 4 - 7 (Weekdays)</option>
+                    <option value="04">August 6 - 9 (Weekends)</option>
+                    <option value="05">August 7 - 10 (Weekends)</option>
+                    <option value="06">August 10 - 13 (Weekdays)</option>
+                    <option value="07">August 14 - 17 (Weekends)</option>
+                    <option value="08">August 17 - 20 (Weekdays)</option>
+                    <option value="09">August 21 - 24 (Weekends)</option>
+                    <option value="10">August 24 - 27 (Weekdays)</option>
+                    <option value="11">August 26 - 29 (Weekends)</option>
+                    <option value="12">August 29 - 31 (Weekends)</option>
+                </select>
+            </fieldset>
+            <fieldset class="locationinfo">
+                <legend>Choose your location</legend>
+                <label for="Scotland">
+                    <input type="radio" id="Scotland" value="Scotland" name="location">
+                    Scotland
+                </label>
+                <label for="Nireland">
+                    <input type="radio" id="Nireland" value="Northern Ireland" name="location">
+                    Northern Ireland
+                </label>
+                <label for="Wales">
+                    <input type="radio" id="Wales" value="Wales" name="location">
+                    Wales
+                </label>
+                <label for="England">
+                    <input type="radio" id="England" value="England" name="location">
+                    England
+                </label>
+            </fieldset>
+            <fieldset class="bitetype">
+                <legend>Pick Your Bite</legend>
+                <label for="shepherdspie">
+                    <input type="checkbox" id="shepherdspie" name="bite" value="Shepherdspie">
+                    Shepherd&#8217;s Pie
+                </label>
+                <label for="beefwellington">
+                    <input type="checkbox" id="beefwellington" name="bite" value="Beefwellington">
+                    Beef Wellington
+                </label>
+                <label for="fishandchips">
+                    <input type="checkbox" id="fishandchips" name="bite" value="Fishandchips">
+                    Fish and Chips
+                </label>
+                <label for="bangersmash">
+                    <input type="checkbox" id="bangersmash" name="bite" value="Bangersmash">
+                    Bangers Mash
+                </label>
+            </fieldset>
+            <fieldset class="additionalinfo">
+                <legend>Additional Information</legend>
+                <label>
+                    Notes
+                    <textarea id="notes" name="notes" rows="4" cols="60" placeholder="Enter your additional information here"></textarea>
+                </label>
+            </fieldset>
+            <fieldset class="submitbutton">
+                <input type="submit" id="submit" value="Submit Request">
+            </fieldset>
+           </form>
+        </article>
+        <footer>
+            <p>&#169;Flights &#38; Bites &#8226; London, United Kingdom &#8226; (702) 123-4567</p>
+        </footer>
+    </div>  
+</body>
+</html>
